@@ -1,0 +1,37 @@
+name: Cursed link report
+description: Share a weird, spammy or misleading link situation so the next version of the Impact Score handles it better.
+title: "[Cursed link] "
+labels: ["cursed link"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing. Leave out client names or anything confidential. Describing the site is enough.
+  - type: dropdown
+    id: situation
+    attributes:
+      label: What kind of situation?
+      options:
+        - A "premium" site that wasn't
+        - Spammy anchors or a negative SEO attack
+        - A site that looked fine but wasn't (or the other way round)
+        - The skill scored something wrong
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: The site type, the metrics that fooled you, the anchors, what you found later.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should the verdict have been, and why?
+  - type: input
+    id: niche
+    attributes:
+      label: Niche and market
+      placeholder: e.g. iGaming, Denmark
