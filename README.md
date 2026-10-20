@@ -4,7 +4,7 @@
 
 The Impact Score is the framework I've used for years to decide whether a link is worth building, and the one I've been showing on stage. This repo turns it into a Claude skill, so Claude can score any link for you and explain why.
 
-It asks four questions about every link:
+It asks four main questions about every link:
 
 1. **Relevance.** Would a reader of this page actually care about your page?
 2. **Domain trust.** Is the traffic real, or just dressed up?
@@ -30,9 +30,9 @@ Spam that's mostly nofollow doesn't kill a good site. It gets a "Spam to watch" 
 ## Connect your data (recommended)
 
 The skill uses whatever you have connected in Claude:
-- **Ahrefs** works best. Semrush or Moz also work.
+- **Ahrefs** works best. Semrush or Moz also work but I worked and tested with Ahrefs data mostly.
 - **Firecrawl**, or Claude's built-in web fetch, to read both pages
-- A **Majestic** export, if you have one, for Trust Flow and Citation Flow
+- A **Majestic** export, if you have one, for Trust Flow and Citation Flow - not mandatory and the framework still works with Ahrefs data only.
 
 No connectors? Paste the metrics (DR, organic traffic, keywords, referring domains, linking-out domains) and Claude scores the rest.
 
@@ -45,7 +45,7 @@ No connectors? Paste the metrics (DR, organic traffic, keywords, referring domai
 
 ## Send me your cursed link stories
 
-The weird cases make the next version smarter. The "premium" site that wasn't, the anchor that made zero sense, the audit that told you to disavow half the internet: **[share it here](https://github.com/kerrigan95/impact-score-skill/issues/new?template=cursed-link.yml)**.
+The weird cases make the next version smarter and I always appreciate a challenge case. The "premium" site that wasn't even near premium quality, the anchor that made zero sense and looked like spam, the audit that told you to disavow half the internet: **[share it here](https://github.com/kerrigan95/impact-score-skill/issues/new?template=cursed-link.yml)**.
 
 ## What's inside
 
